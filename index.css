@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+}
+
+#topSection {
+    display: block;
+    padding: 4px 0px;
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#topSection #backgroundImage {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#searchBox {
+    display: inline-block;
+}
+
+#searchBox input {
+    margin: auto;
+    height: 3em;
+    width: 19em;
+    border-radius: 4px;
+}
+
+#main-search-text {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.subText-1 {
+    display: flex;
+    padding-top: 4em;
+    padding-left: 60em;
+    align-content: flex-end;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+#subSections,
+#college-cllps,
+#exam-cllps,
+#caro-heading {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+#subSections,
+#caro-heading,
+#buttons {
+    background-color: rgb(228, 223, 223);
+}
+
+#subSections>figure,
+#college-cllps>figure,
+#exam-cllps>figure {
+    background-color: white;
+    text-align: center;
+}
+
+#college-cllps,
+#exam-cllps {
+    display: none;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#b-text,
+#caro-text {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    text-align: left;
+}
+
+
+
+#clicks {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+#caro-img {
+    text-align: right;
+}
+
+#clicks>button {
+    background-color: aliceblue;
+    color: orange;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+}
+
+#clicks>button:active {
+    background-color: orange;
+    color: white;
+}
+

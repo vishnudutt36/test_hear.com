@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(209, 220, 251, 0.737);
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+#close{
+    background-image:url(/img/icons8-macos-close-32.png);
+    height: 31px;
+    width: 32px;
+    border: none;
+    padding: 2px;
+    float: right;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    padding-top: 3em;
+    text-align: center;
+    display: block;
+}
+section{
+    text-align: center;
+    padding-right: 15px;
+
+}
+
+.blue,
+.red {
+    display: block;
+    text-align: center;
+    line-height: .2em;
+    border-radius: 4px;
+    margin: .5em;
+    width: 100%; 
+    border: none;
+
+}
+
+section p {
+    color: white;
+    text-align: center;
+} 
+
+.blue {
+    background-color: rgba(7, 7, 96, 0.886);
+    color: white;
+}
+
+.red {
+    background-color: rgba(232, 45, 45, 0.891);
+    color: white;
+}
+
+section div {
+    text-align: center;
+    color: rgba(141, 137, 137, 0.7);
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+#newUser {
+    text-align: center;
+}
+
+#newUser button {
+    display: inline-block;
+    background-color: white;
+    margin-top: 1.5em;
+    margin: 8px;
+    color: rgba(141, 137, 137, 0.7);
+    font-size: large;
+    border: none;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .blue,
+    .red {
+        display: block;
+        width: 400px;
+        text-align: center;
+        margin: .4em;
+        border-radius: 5px;
+    }
+
+    header {
+        text-align: center;
+        width: 400px;
+        padding: 5px;
+    }
+
+    #newUser{
+        text-align: center;
+    }
+
+    #newUser button {
+        display: block;
+        width: auto;
+        text-align: center;
+        margin: .4em;
+        border-radius: 5px;
+    }
+
+}

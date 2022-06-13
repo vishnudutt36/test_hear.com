@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schools</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+    <header>
+        <aside>
+            <div id="mySidenav" class="sidenav">
+                <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </button>
+                <figure id="guest">
+                    <img src="img/slide-guest.png" alt="guest">
+                    <figcaption>Hi, Guest!</figcaption>
+                </figure>
+                <div class="sideBarItem">
+                    <figure><img src="img/slide-home.png" alt="">
+                        <p>HOME</p>
+                    </figure>
+                    <figure><img src="img/slide-colleges.png" alt="">
+                        <p>COLLEGES</p>
+                    </figure>
+                    <figure><img src="img/slide-exam.png" alt="">
+                        <p>EXAMS</p>
+                    </figure>
+                    <figure><img src="img/slide-write-review.png" alt="">
+                        <p>WRITE A REVIEW</p>
+                    </figure>
+                    <figure><img src="img/slide-courses.png" alt="">
+                        <p>COURSES</p>
+                    </figure>
+                    <figure><img src="img/slide-cutoff.png" alt="">
+                        <p>CUTOFF</p>
+                    </figure>
+                    <figure><img src="img/slide-admission.png" alt="">
+                        <p>ADMISSION 2018</p>
+                    </figure>
+                    <figure><img src="img/slide-news.png" alt="">
+                        <p>NEWS</p>
+                    </figure>
+                    <figure><img src="img/slide-review.png" alt="">
+                        <p>REVIEWS</p>
+                    </figure>
+                    <figure><img src="img/slide-coupon.png" alt="">
+                        <p>TOP COUPONS <sup>New</sup></p>
+                    </figure>
+                    <figure><img src="img/slide-login.png" alt="">
+                        <p>LOGIN</p>
+                    </figure>
+
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </aside>
+        <div id="userLogin">
+            <a href="/login.html"><img src="/img/slide-login.png" alt=""></a>
+        </div>
+        <section id="topSection">
+            <div id="backgroundImage">
+                <img src="/img/background-img.jpg" alt="">
+            </div>
+            <div id="main-search-text">
+                <div>
+                    <img src="/img/main-user.png" alt="User login">
+                </div>
+                <h2 class="subText">Find every college, exam and course at one place</h2>
+                <div id="searchBox">
+                    <input type="search" placeholder="🔍Search....">
+                </div>
+            </div>
+            <p class="subText-1">Shiv Nadar University, Noida</p>
+        </section>
+    </header>
+    <section id="information">
+        <article id="subSections">
+            <figure>
+                <img src="/img/find-college.png" alt="college">
+                <figcaption>
+                    FIND COLLEGE
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/img/explore-exams.png" alt="explore">
+                <figcaption>EXPLORE EXAMS</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/news.png" alt="get latest news">
+                <figcaption>GET LATEST NEWS</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/top-review.png" alt="Top Reviews">
+                <figcaption>TOP REVIEWS</figcaption>
+            </figure>
+            <figure>
+                <img src="img/courses.png" alt="Top Courses">
+                <figcaption>TOP COURCES</figcaption>
+            </figure>
+            <figure>
+                <img src="img/admission.png" alt="GET ADMISSION">
+                <figcaption>GET ADMISSION</figcaption>
+            </figure>
+            <figure>
+                <img src="img/rank-predictor.png" alt="Rank Predictor">
+                <figcaption>RANK PREDICTOR</figcaption>
+            </figure>
+            <figure>
+                <img src="img/cut-off.png" alt="CUT OFF">
+                <figcaption>CUT OFF</figcaption>
+            </figure>
+            <figure>
+                <img src="img/write-review.png" alt="WRITE A REVIEW">
+                <figcaption>WRITE A REVIEW</figcaption>
+            </figure>
+        </article>
+        <article id="buttons">
+            <div id="b-text">
+                <h3>Explore your future</h3>
+                <p>Select for college or exam</p>
+            </div>
+            <div>
+                <img src="img/hat.png" alt="hat">
+            </div>
+            <div id="clicks">
+                <button onclick="collegeCollapse()">COLLEGES</button>
+                <button onclick="examCollapse()">EXAMS</button>
+            </div>
+        </article>
+        <article id="college-cllps">
+            <figure>
+                <img src="img/management.png" alt="Management">
+                <figcaption>
+                    MANAGEMENT <br>
+                    5720 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/engineering.png" alt="Engineering">
+                <figcaption>
+                    ENGINEERING <br>
+                    4502 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/medical.png" alt="Medical">
+                <figcaption>
+                    MEDICAL <br>
+                    1435 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/agriculture.png" alt="Agriculture">
+                <figcaption>
+                    AGRICULTURE<br>
+                    479 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/architecture.png" alt="Architecture">
+                <figcaption>
+                    ARCHITECTURE<br>
+                    479 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/arts.png" alt="Arts">
+                <figcaption>
+                    ARTS<br>
+                    4045 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/aviation.png" alt="Aviation">
+                <figcaption>
+                    AVIATION<br>
+                    124 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/commerce.png" alt="Commerece">
+                <figcaption>
+                    COMMERCE<br>
+                    3684 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/dental.png" alt="Dental">
+                <figcaption>
+                    DENTAL<br>
+                    381 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/design.png" alt="Design">
+                <figcaption>
+                    DESIGN<br>
+                    643 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/education.png" alt="Education">
+                <figcaption>
+                    EDUCATION<br>
+                    2672 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/law.png" alt="Law">
+                <figcaption>
+                    LAW<br>
+                    958 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/paramedical.png" alt="Paramedical">
+                <figcaption>
+                    PARAMEDICAL<br>
+                    929 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/pharmacy.png" alt="Pharmacy">
+                <figcaption>
+                    PHARMACY<br>
+                    1049 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/science.png" alt="Science">
+                <figcaption>
+                    SCIENCE<br>
+                    4660 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/computer-application.png" alt="Computer Applications">
+                <figcaption>
+                    COMPUTER APPLICATIONS<br>
+                    3764 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/mass-communication.png" alt="Mass Communications">
+                <figcaption>
+                    MASS COMMUNICATIONS<br>
+                    1159 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/veterinary.png" alt="Veterinary">
+                <figcaption>
+                    VETERINARY SCIENCES<br>
+                    93 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/hotel-management.png" alt="Hotel Management">
+                <figcaption>
+                    HOTEL MANAGEMENT<br>
+                    684 COLLEGES
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/vocational-courses.png" alt="Vocational Courses">
+                <figcaption>
+                    VOCATIONAL COURCES<br>
+                    613 COLLEGES
+                </figcaption>
+            </figure>
+        </article>
+        <article id="exam-cllps">
+            <figure>
+                <img src="img/management.png" alt="Management">
+                <figcaption>
+                    MANAGEMENT<br>
+                    81 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/engineering.png" alt="Engineering">
+                <figcaption>
+                    ENGINEERING<br>
+                    130 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/medical.png" alt="Medical">
+                <figcaption>
+                    MEDICAL<br>
+                    27 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/agriculture.png" alt="Agriculture">
+                <figcaption>
+                    AGRICULTURE<br>
+                    16 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/architecture.png" alt="Architecture">
+                <figcaption>
+                    ARCHITECTURE<br>
+                    28 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/arts.png" alt="Arts">
+                <figcaption>
+                    ARTS<br>
+                    338 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/aviation.png" alt="Aviation">
+                <figcaption>
+                    AVIATION<br>
+                    0 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/commerce.png" alt="Commerece">
+                <figcaption>
+                    COMMERCE<br>
+                    32 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/dental.png" alt="Dental">
+                <figcaption>
+                    DENTAL<br>
+                    15 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/design.png" alt="Design">
+                <figcaption>
+                    DESIGN<br>
+                    21 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/education.png" alt="Education">
+                <figcaption>
+                    EDUCATION<br>
+                    35 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/law.png" alt="Law">
+                <figcaption>
+                    LAW<br>
+                    50 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/paramedical.png" alt="Paramedical">
+                <figcaption>
+                    PARAMEDICAL<br>
+                    12 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/pharmacy.png" alt="Pharmacy">
+                <figcaption>
+                    PHARMACY<br>
+                    45 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/science.png" alt="Science">
+                <figcaption>
+                    SCIENCE<br>
+                    72 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/computer-application.png" alt="Computer Applications">
+                <figcaption>
+                    COMPUTER APPLICATIONS<br>
+                    52 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/mass-communication.png" alt="Mass Communications">
+                <figcaption>
+                    MASS COMMUNICATIONS<br>
+                    3 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/veterinary.png" alt="Veterinary">
+                <figcaption>
+                    VETERINARY SCIENCE<br>
+                    10 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/hotel-management.png" alt="Hotel Management">
+                <figcaption>
+                    HOTEL MANAGEMENT<br>
+                    11 EXAMS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/vocational-courses.png" alt="Vocational Courses">
+                <figcaption>
+                    VOCATIONAL COURSES<br>
+                    5 EXAMS
+                </figcaption>
+            </figure>
+        </article>
+    </section>
+    <footer>
+        <div id="caro-heading">
+            <div id="caro-text">
+                <h1>Top featured colleges</h1>
+                <h3>Top colleges cherry picked for you</h3>
+            </div>
+            <div id="caro-img">
+                <img src="img/caro-icon.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="img/subharti-university.jpg" alt="Subharti University" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Subharti University</h3>
+                            <p>M.Phil/Ph.D</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/rajasthan-university.jpg" alt="Rajasthan University" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Rajasthan University</h3>
+                            <p>UG certificate in...</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/jaipur-university.jpg" alt="Jaipur University" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Jaipur University</h3>
+                            <p>B.Tech/MCA learn online...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
